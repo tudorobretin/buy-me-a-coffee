@@ -24,7 +24,7 @@ contract BuyMeACoffee {
 
     // The constructor only runs at deploy.
     constructor() {
-        // Define who the owner is by looking who deployed the code.
+        // Define who the owner is by looking at who deployed the code.
         owner = payable(msg.sender);
     }
 
@@ -57,7 +57,7 @@ contract BuyMeACoffee {
     }
 
     /**
-     * @dev send the entier balance stored in this contract to the owner
+     * @dev send the entire balance stored in this contract to the owner
      */
     function withdrawMoney() public {
 
