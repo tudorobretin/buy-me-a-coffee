@@ -60,14 +60,17 @@ contract BuyMeACoffee {
      * @dev send the entire balance stored in this contract to the owner
      */
     function withdrawMoney() public {
-
+        // Accessing the address of this contract, then balance.
+        // address(this).balance;
+        require(owner.send(address(this).balance));
     }
 
     /**
      * @dev retrieve all the entries received and stored on the blockchain
      */
-    function getEntries() public {
-
+     // View keyword singals this function will not change state on blockchain.
+    function getEntries() public view returns(Entry[] memory) {
+        return entries;
     }
 
 }

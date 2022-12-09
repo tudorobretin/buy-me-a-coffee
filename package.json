@@ -11,6 +11,11 @@
   "license": "ISC",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "ethereum-waffle": "^3.4.4",
     "hardhat": "^2.12.3"
+  },
+  "dependencies": {
+    "nodeenv": "^3.0.75"
   }
 }
